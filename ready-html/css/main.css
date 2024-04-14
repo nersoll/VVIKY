@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--minmeausere: min(100vh, 100wv)
+	--color-header: #f4efec;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+@font-face {
+	font-family: raleway-c;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: outfit-c;
+	src: url(../fonts/outfit-regular.woff2);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: outfit-c;
+}
+.value-text{
+	background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+		background-size: 300%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 900;
+		letter-spacing: 0px;
+		text-transform: uppercase;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: animated_text 7s ease-in-out infinite;
+		-moz-animation: animated_text 0s ease-in-out infinite;
+		-webkit-animation: animated_text 7s ease-in-out infinite;
+	
+}
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
+/* will-change */
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+body {
+	background-image: url(../img/bg.jpg);
+	background-size: 50px;
+	color: #fafafa;
+	font-family: raleway-c;
+	overflow-x: hidden;
+}
+.star{
+	width: 120vw;
+	height: 100vh;
+	top: -10vh;
+	left: -10vw;
+}
+.square{
+	top: 110vh;
+	position: absolute;
+	background-color: #111825;
+
+	z-index: -1; 
+	width: 100vw; 
+	height: 100vh;
+}
+.hero {
+	/* height: 100vh; */
+	
+	height: 100vh;
+	position: absolute;
+	
+	z-index: -2;
+}
+.main-header {
+	height: 100vh;
+}
+.container {
+	padding: 0 7vw;
+}
+.main-title {
+	font-size: calc(var(--index) * 5);
+	position: absolute;
+	width: min-content;
+	top: 13vh;
+	line-height: 0.95;
+}
+.gallery {
+	display: flex;
+	padding: calc(var(--index) * 8) 0;
+}
+.gallery > * {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.gallery__item {
+	max-width: calc(var(--index) * 20);
+	width: 40vw;
+	margin-bottom: var(--gallery-gap);
+	max-height: 180vh;
+	border-radius: 8px;
+}
+.gallery__left {
+	margin-right: 5px;
+	margin-top: calc(var(--gallery-gap) * 1.75);
+}
+.gallery__right .gallery__item {
+	margin: 0;
+	margin-top: var(--gallery-gap);
+}
+.text-block {
+	color: var(--color-text);
+	position: relative;
+}
+.text-block__h {
+	font-size: 2rem;
+	line-height: 2.4rem;
+	color: var(--color-header);
+	margin-bottom: 1.5rem;
+}
+.text-block__p {
+	line-height: 1.75;
+}
+.advantage-content {
+	justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+	margin: 2.%;
+	display: flex;
+    flex-wrap: wrap;
+	text-align: center;
+	
+	
+}
+.advantage-title{
+	z-index: -1;
+	text-align: center;
+	margin-bottom: calc(var(--index) * 2.2);
+	font-size: calc(var(--index) * 2.2);
+}
+
+.advantage-item {
+	font-size: calc(var(--index) * 1.2);
+	border-radius: 8px;
+	justify-content: center;
+	margin: 1%;
+	padding: 20px;
+	width: calc(var(--index) * 13.2);
+	height: calc(var(--index) * 13.2);
+
+	border: #fafafa solid;
+    background-color: rgb(30, 27, 36);
+	
+
+}
+.advantage-img{
+	margin-bottom: 3%;
+	height: calc(var(--index) * 6.2);
+	width: calc(var(--index) * 6.2);
+}
+
+.video-main{
+	border-radius: 20px;
+	margin: 0 auto;
+	
+}
+.video-title{
+	font-size: calc(var(--index) * 3.2);
+	text-align: center;
+	margin: calc(var(--index) * 0.6);
+	margin-top: calc(var(--index) * 3.6);
+}
+
+footer{
+	justify-content:space-around; /* Horizontally center */
+    align-items: center; /* Vertically center */
+	padding: 0 1vw;
+	display: flex;
+    flex-wrap: wrap;
+	text-align: center;
+	margin-top: 100px;
+	background: rgb(18,17,23);
+	border-radius: 30px;
+	height: 230px;
+	padding-bottom: 100px;
+	background: linear-gradient(353deg, rgba(18,17,23,1) 0%, rgba(40,40,56,1) 79%, rgba(75,75,94,1) 100%);
+}
+.footer_item{
+	font-size: calc(var(--index) * 1.2);
+	justify-content: center;
+	margin: 1%;
+	width: 30vw;
+	
+}
+.messengers{
+	margin: 20px auto 20px
+}
+.logo{
+	font-size: 2.5em;
+}
