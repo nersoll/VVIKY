@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="css/navigator.css">
 <link rel="stylesheet" href="css/button.css">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
+
+<script src="js/generator.js" defer></script>r
+<script src="js/star.js" defer></script>
+<script src="js/generator-slider.js" defer></script>
 </head>
 <body>
 
@@ -23,35 +29,43 @@
 		  </ul>
 		</div>
 	  </nav>
-  
+    <div id="particles-js" class="star-back"></div>
     <main>
       
       <div class="container-submit">
         
         <h1 class="title-generator">fddsdfsdfdsf</h1>
         <div class="input-group">
-          <form action="submition">
+          <form action="submition" id="submition">
+            
+            <div id="myInput" class="input-group__input">
 
-            <div class="radio">
-               
-              <label class="label" for="sad">Светлая тема<input type="radio" name="radio"/></label>
-              
-              <label class="label" for="sad">Темная тема<input type="radio" name="radio"/></label>
+              <input class="input-txt" placeholder="Presentation's Name" type="text"/>
+
             </div>
-         
+            <div class="radio-q">
+              <input id="edit-term-worker" name="5" type="radio">
+              <label for="edit-term-worker" class="label">Light theme</label>
+            </div>
+            <div class="radio-q">
+              <input id="edit-term-worker2" name="5" type="radio">
+              <label for="edit-term-worker2"class="label">Dark theme </label>
+            </div>
+            
+            
+            
             <div class="range">
-              <label class="label" for="">Количество слайдов <br><input type="range"/></label>
-              
+              <br>
+              <br>
+              <label id="slider-value" class="label" for="">Slide count: 6</label>
+              <input min="1" max="10"  step="1" type="range" id="slider"/>
             </div>
-           
-            <input placeholder="dsaddsf" type="text" id="myInput" class="input-group__input"  />
-            <input placeholder="dsaddsf" type="text" id="myInput" class="input-group__input"  />
-            <input placeholder="dsaddsf" type="text" id="myInput" class="input-group__input"  />
-            <input placeholder="dsaddsf" type="text" id="myInput" class="input-group__input"  />
-    
+
             <div class="button">
-              <input type="button" value="Submit"/>
+              <input type="button" id="submit" value="Submit" onclick="combine()" ON/>
             </div>
+
+            
           </form>
         </div>
       </div>

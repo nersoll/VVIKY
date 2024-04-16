@@ -32,7 +32,7 @@
 .btn--blue {
   --hue: 210;
 }
-.btn:active, .btn:focus {
+.btn:active{
   outline: 3px solid hsl(calc(var(--hue) + 90), 98%, 80%);
 }
 .btn + .btn {
@@ -241,7 +241,7 @@ input[type=button] {
   border-radius: 2em;
   transition: 1s;
 }
-input[type=button]:hover, input[type=button]:focus, input[type=button]:active {
+input[type=button]:hover{
   background: var(--color);
   color: #fff;
 }
