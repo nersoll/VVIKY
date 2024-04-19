@@ -1,9 +1,6 @@
 
 if (ScrollTrigger.isTouch !== 1 & window.innerWidth / window.innerHeight > 0.9) {
-	changepos();
-window.addEventListener("resize", function(event) {
-	changepos();
-})
+
 
 
 
@@ -102,7 +99,10 @@ function changepos(){
 		}
 	}	
 }
-
+changepos();
+window.addEventListener("resize", function(event) {
+	changepos();
+})
 
 // window.onload = function() {
 // 	var width = window.innerWidth;
