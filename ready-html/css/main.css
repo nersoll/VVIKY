@@ -83,8 +83,8 @@ background: linear-gradient(188deg, rgba(0,0,0,1) 6%, rgba(11,2,52,1) 37%, rgba(
 .hero {
 	height: 100vh;
 
-	/* width: 100vw;
-	height: auto; */
+	width: 100vw;
+	height: auto;
 	/* height: 100vh; */
 	position: absolute;
 	
