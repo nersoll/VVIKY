@@ -1,10 +1,6 @@
 
 if (ScrollTrigger.isTouch !== 1 & window.innerWidth / window.innerHeight > 0.9) {
-	changepos();
-window.addEventListener("resize", function(event) {
-	changepos();
-})
-
+	
 
 
 	ScrollSmoother.create({
@@ -81,6 +77,10 @@ window.addEventListener("resize", function(event) {
 	})
 	
 }
+changepos();
+window.addEventListener("resize", function(event) {
+	changepos();
+})
 
 
 function changepos(){
