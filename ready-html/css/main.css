@@ -48,8 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 	will-change: transform;
 } */
 body {
-	position: relative;
-	max-width: 100%;
+	width: 100%;
  	overflow-x:hidden;
 	background-image: url(../img/bg.jpg);
 	background-size: 50px;
@@ -82,10 +81,10 @@ body {
 background: linear-gradient(188deg, rgba(0,0,0,1) 6%, rgba(11,2,52,1) 37%, rgba(59,35,11,1) 71%, rgba(92,61,13,1) 93%);
 }
 .hero {
-	/* height: 100vh; */
+	height: 100vh;
 
-	width: 100vw;
-	height: auto;
+	/* width: 100vw;
+	height: auto; */
 	/* height: 100vh; */
 	position: absolute;
 	
