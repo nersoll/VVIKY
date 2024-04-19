@@ -12,24 +12,42 @@
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-	<link rel="stylesheet" href="css/button.css">
 
+	<link rel="stylesheet" href="css/button.css">
 	<link rel="stylesheet" href="css/main.css">
+	
 	<!-- <script src="libs\gsap\particles\particles.min.js"defer></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
+	
+	<link rel="stylesheet" href="css/navigator.css">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'><link rel="stylesheet" href="css/messenger.css">
+	
 	<script src="js/app.js" defer></script>
 	<script src="js/star.js" defer></script>
+	<script src="js/navigator.js" defer></script>
+	
 </head>
 
 <body>
-
+	<nav class="nav">
+		<div class="container">
+		  <h1 class="logo"><a href="index.html">L<span>G</span></a></h1>
+		  <ul>
+			<li><a href="#" class="current">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Privacy </a></li>
+			<li><a href="#">Contact</a></li>
+		  </ul>
+		</div>
+	  </nav>
+   
 	<div class="wrapper">
 		<div class="content">
 
 			<header class="hero-section">
-				<img data-speed=".5" class="hero" src="img/back.png" alt="Alt">
+				<div data-speed=".5" class=" back-hero" alt="Alt" ></div>
 				<div data-speed=".6" id="particles-js" class="hero star"></div>
 				<img data-speed=".6" class="hero" src="img/layer0.png" alt="Alt">
 				<img data-speed=".80" class="hero" src="img/layer1.png" alt="Alt">

@@ -1,98 +1,132 @@
 body {
-    background-color: #fdf1ec;
-  }
-  
-  .wrapper {
-    height: 420px;
-    width: 654px;
-    margin: 50px auto;
-    border-radius: 7px 7px 7px 7px;
-    /* VIA CSS MATIC https://goo.gl/cIbnS */
-    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  }
-  
-  .product-img {
-    float: left;
-    height: 420px;
-    width: 327px;
-  }
-  
-  .product-img img {
-    border-radius: 7px 0 0 7px;
-  }
-  
-  .product-info {
-    float: left;
-    height: 420px;
-    width: 327px;
-    border-radius: 0 7px 10px 7px;
-    background-color: #312f2f;
-  }
-  
-  .product-text {
-    height: 300px;
-    width: 327px;
-  }
-  
-  .product-text h1 {
-    margin: 0 0 0 38px;
-    padding-top: 52px;
-    font-size: 34px;
-    color: #fffefe;
-  }
-  
+	background-image: url(../img/bg.jpg);
+	background-size: 50px;
+	color: #fafafa;
+  overflow-x: hidden;
+	font-family: raleway-c;
 
-  .product-text h2 {
-    margin: 0 0 47px 38px;
-    font-size: 13px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #d2d2d2;
-    letter-spacing: 0.2em;
-  }
+white-space:inherit
+}
+@font-face {
+	font-family: raleway-c;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: outfit-c;
+	src: url(../fonts/outfit-regular.woff2);
+}
+.wrapper {
+
+  justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+	margin: 2.%;
+	display: flex;
+    flex-wrap: wrap;
+	text-align: center;
+  margin: 150px auto 50px;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+.content{
+  margin: 10px;
+}
+.product-img {
+  float: left;
+  height: calc(var(--index) * 15);
+  width: calc(var(--index) * 15);
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: calc(var(--index) * 15);
+  width: calc(var(--index) * 12);
+  border-radius: 0 7px 10px 7px;
+  background-color: #312f2f;
+}
+
+.product-text {
+
+  width: 80%;
+  height: 90%;
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis */
+  white-space: nowrap; /* Prevent text from wrapping to next line */
+}
+
+.product-text h1 {
+  margin: 0 0 0 3vw;
+  padding-top: 2vw;
+  font-size: 34px;
+  color: #fffefe;
+}
+
+.product-text h2 {
+  margin: 0 0 1vw 5vw;
+  font-size: 13px;
   
-  .product-text p {
-    height: 125px;
-    margin: 0 0 0 38px;
-    font-family: 'Playfair Display', serif;
-    color: #e7e7e7;
-    line-height: 1.7em;
-    font-size: 15px;
-    font-weight: lighter;
-    overflow: hidden;
-  }
-  
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: calc(var(--index) * 15);
+  margin: 0 0 0 38px;
+
+  color: #e7e7e7;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
 
 
-  
-  span {
-    display: inline-block;
 
-    
-  }
-  
-  #library-button{
-    float: right;
-    display: inline-block;
-    height: 50px;
-    width: 176px;
-    margin: 0 40px 0 16px;
-    box-sizing: border-box;
-    border: transparent;
-    border-radius: 60px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
 
-    letter-spacing: 0.1em;
-    color: #312f2f;
-    background-color: #9cebd5;
-    cursor: pointer;
-    outline: none;
-  }
+.btn__txt{
+  font-size: calc(var(--index) * 1.1);
+}
+.btn{
+  position: static;
+  left: 20px;
+  top: -2em;
+  font-size: calc(var(--index) * 1);
 
-  
-  
+}
+
+
+footer{
+	justify-content:space-around; /* Horizontally center */
+    align-items: center; /* Vertically center */
+	padding: 0 1vw;
+	display: flex;
+    flex-wrap: wrap;
+	text-align: center;
+	margin-top: 100px;
+	background: rgb(18,17,23);
+	border-radius: 30px;
+	height: 180px;
+	padding-bottom: 100px;
+	background: linear-gradient(353deg, rgba(18,17,23,1) 0%, rgba(40,40,56,1) 79%, rgba(75,75,94,1) 100%);
+}
+.footer_item{
+	font-size: calc(var(--index) * 1.2);
+	justify-content: center;
+	margin: 1%;
+	width: 30vw;
+	
+}
+.messengers{
+	margin: 20px auto 20px
+}
+.logo{
+	font-size: 2.5em;
+}

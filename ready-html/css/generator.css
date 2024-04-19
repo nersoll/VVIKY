@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: raleway-c;
+}
+
+:root {
+  --background-size: unquote("min(100vw, 40em)");
+}
+@font-face {
+	font-family: raleway-c;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: outfit-c;
+	src: url(../fonts/outfit-regular.woff2);
+}
+html {
+  
+  font-size: calc(100% + 0.5vw);
+  overflow-x: hidden;
+  background-color:  #1b1a1b;;
+}
+
+input[type="radio"] {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+	background-color: transparent;
+	position: relative;
+	top: 6px;
+}
+ 
+
+.radio-q{
+  display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.nav{
+  height: 100px;
+}
+
+input{
+  margin: 0 0 4vh;
+}
+.star-back{
+  opacity: 0.15;
+
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+}
+/* отступ от вопросиков */
+#myInput{
+  padding: 6vh 8vw 4vh;
+  margin: 30PX;
+}
+
+.title-generator{
+  color: #fafafa;
+}
+ 
+.label{
+  color: #d23cff;
+
+  top: 15px;
+  margin-top: 15px;
+}
+.radio{
+  position: relative;
+
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition-duration: 0.001s !important;
+  }
+}
+
+
+
+
+.input-group{
+  justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+	margin: 2.%;
+	display: flex;
+    flex-wrap: wrap;
+	text-align: center;
+}
+.input-group__label {
+  padding: 0 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  letter-spacing: 0.1em;
+  color: #ccd;
+  color: rgba(255, 220, 255, 0.6);
+  cursor: pointer;
+}
+
+.slide-num, .img-descr{
+  color: #928f8f;
+  font-size: 0.75em
+
+}
+.slide-num{
+  position: relative;
+  left: 40%;
+  bottom: 15px;
+}
+.img-descr{
+  
+  text-overflow: ellipsis;
+  position: relative;
+  left: -100px;
+  bottom: -15px;
+}
+/* кастом вопросов */
+.input-group__input {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  border-style: none;
+  outline: none;
+
+  width: 100%;
+  padding: 0.8em 1em;
+  border: 0.25em solid transparent;
+  background-image: linear-gradient(#070606, #000), linear-gradient(120deg, rgb(196, 31, 247) 0%, rgb(44, 171, 230) 50%, rgb(208, 55, 255) 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 1.8em;
+  background-size: 200% 100%;
+  transition: background-position .8s ease-out;
+  
+}
+
+.input-txt{
+  border: none;
+  border-bottom: solid #fafafa;
+  outline: none;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: #c7c7c7;
+  background-image: linear-gradient(#070606, #000);
+}
+.input-group__input:hover {
+  background-position: 100% 0;
+}

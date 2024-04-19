@@ -1,3 +1,5 @@
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -53,10 +55,10 @@ body {
 	overflow-x: hidden;
 }
 .star{
-	width: 120vw;
+	width: 200vw;
 	height: 100vh;
 	top: -10vh;
-	left: -10vw;
+
 }
 .square{
 	top: 110vh;
@@ -66,6 +68,15 @@ body {
 	z-index: -1; 
 	width: 100vw; 
 	height: 100vh;
+}
+
+.back-hero{
+	position: absolute;
+	z-index: -3;
+	height: 100vh;
+	width: 100vw;
+	background: rgb(0,0,0);
+background: linear-gradient(188deg, rgba(0,0,0,1) 6%, rgba(11,2,52,1) 37%, rgba(59,35,11,1) 71%, rgba(92,61,13,1) 93%);
 }
 .hero {
 	/* height: 100vh; */
@@ -185,7 +196,7 @@ footer{
 	margin-top: 100px;
 	background: rgb(18,17,23);
 	border-radius: 30px;
-	height: 230px;
+	height: 180px;
 	padding-bottom: 100px;
 	background: linear-gradient(353deg, rgba(18,17,23,1) 0%, rgba(40,40,56,1) 79%, rgba(75,75,94,1) 100%);
 }
