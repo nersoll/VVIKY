@@ -1,5 +1,5 @@
 
-if (ScrollTrigger.isTouch !== 1 & window.innerWidth / window.innerHeight > 0.9) {
+if (ScrollTrigger.isTouch !== 1) {
 
 
 
